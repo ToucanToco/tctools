@@ -59,7 +59,7 @@ def daemon_process(context):
         sys.exit(-1)
 
     print(green("Starting daemon with PID %d on port %d (serving %s)..." % (os.getpid(), HTTP_PORT, CWD)))
-    print(green("Please visit https://localhost:%d/front_config.cson at least once for https connection to work." % HTTP_PORT))
+    print(green("Please visit https://localhost:%d/ at least once for https connection to work." % HTTP_PORT))
     conf = {"port": HTTP_PORT, "cwd": CWD}
     json.dump(conf, open(CONF_JSON_FILE, 'w'))
     with context:
