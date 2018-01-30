@@ -41,5 +41,5 @@ rm -rf "$VENV_DIR"
 virtualenv "$VENV_DIR"
 "$VENV_DIR/bin/pip" install -r "$REPO_DIR/frontserver/requirements.txt"
 
-echo "$VENV_DIR/bin/python $REPO_DIR/frontserver/frontserver.py \$@" | sudo tee /usr/local/bin/frontserver
+echo "#\!/usr/bin/env bash\n$VENV_DIR/bin/python $REPO_DIR/frontserver/frontserver.py \$@" | sudo tee /usr/local/bin/frontserver
 sudo chmod +x /usr/local/bin/frontserver
