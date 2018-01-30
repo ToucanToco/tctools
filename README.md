@@ -1,9 +1,11 @@
 # tctools
 
-## Install
+## Installation
+
+Use this command in a terminal to install (or update) tctools. It will ask your root password at some time (to write in `/usr/local/bin`).
 
 ```
-bash -c "$(curl -fsSL 'https://raw.githubusercontent.com/ToucanToco/tctools/master/install.sh')"
+curl -fsSL 'https://raw.githubusercontent.com/ToucanToco/tctools/master/install.sh' | bash
 ```
 
 ## Available tools
