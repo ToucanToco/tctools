@@ -10,4 +10,4 @@ curl -fsSL 'https://raw.githubusercontent.com/ToucanToco/tctools/master/install.
 
 ## Available tools
 
-- `frontserver` : daemon to serve a local directory on port 8800
+- `frontserver` : daemon to serve a local directory on port 8800 (add `&localConfig` parameter to the front url to use it)
